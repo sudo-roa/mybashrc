@@ -6,27 +6,22 @@
 ## 使い方
 ```
 $ git clone https://github.com/sudo-roa/mybashrc.git
-$ cd mybashrc
-$ ./install.sh
 ```
+設定ファイルを書き換えターミナルを再起動すれば反映される<br>
 
-### .bash_profileがある場合
+### .bash_profileがあり.bashrcがない場合
+.bashrcを作成し、その中にmybash_aliasの内容をコピペ<br>
 .bash_profileに以下を追加
 ```
-[[ -f ~/.mybash_alias ]] && . ~/.mybash_alias
+[[ -f ~/.bashrc ]] . ~/.bashrc
 ```
 
 ### .bash_profileがなく.bashrcがある場合
-.bashrcに以下を追加
-```
-[[ -f ~/.mybash_alias ]] && . ~/.mybash_alias
-```
+.bashrcにmybash_aliasの内容をコピペ
 
 ### .bash_profileも.bashrcもない場合
-.bashrcを作成し、その中に以下を追加
-```
-[[ -f ~/.mybash_alias ]] && . ~/.mybash_alias
-```
+.bashrcを作成し、その中にmybash_aliasの内容をコピペ
+
 
 
 ## author
